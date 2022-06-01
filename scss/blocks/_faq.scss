@@ -1,0 +1,86 @@
+.faq {
+  margin-top: 96px;
+
+  &__content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+
+  .content__column {
+	  display: flex;
+	  flex-direction: column;
+	  max-width: 570px;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 43px;
+    color: #161516;
+  }
+
+  .tile {
+    &:hover {
+      box-shadow: 0px 2px 6px rgba(198, 197, 210, 0.75);
+      svg {
+        circle {
+          fill: #74c733;
+        }
+        rect {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+
+  &-card {
+    width: 570px;
+	margin-bottom: 30px;
+    padding: 27px 36px 27px 36px;
+    border: none;
+    cursor: pointer;
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+
+      .title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color: #343439;
+		text-align: left;
+      }
+    }
+
+    &__text {
+		margin-top: 10px;
+		padding: 20px 30px 30px;
+		max-width: 498px;
+		left: 36px;
+		top: 66px;
+		border: 1px solid #74c733;
+		border-radius: 0px 16px 16px 16px;
+		display: none;
+		text-align: left;
+		
+		p {
+			font-weight: 300;
+			font-size: 15px;
+			line-height: 29px;
+			color: #595866;
+		}
+		
+    }
+
+    &--active &__text {
+      display: block;
+    }
+
+    &--active .icon .vertical {
+      display: none;
+    }
+  }
+}

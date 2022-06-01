@@ -1,0 +1,58 @@
+.main {
+    margin-top: 35px;
+
+    .tile_big {
+        padding: 80px 90px 76px 90px;
+        position: relative;
+    }
+
+    &__image {
+        width: 40%;
+        position: absolute;
+        top: 41px;
+        right: 90px;
+        bottom: 20px;
+        background-image: url("../../img/first-screen-block-img.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__title {
+        max-width: 724px;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        color: #343439;
+        text-transform: uppercase;
+
+        span {
+            color: #57A41B;
+        }
+    }
+
+    &__list {
+        margin-top: 22px;
+        margin-bottom: 42px;
+
+        .item {
+            display: flex;
+            margin-bottom: 14px;
+            &:last-child {
+			margin-bottom: 0px;
+            }
+
+            &__icon {
+                margin-right: 15px;
+            }
+
+            &__txt {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                color: #343439;
+            }
+        }
+    }
+}

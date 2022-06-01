@@ -1,0 +1,44 @@
+.offer {
+    margin-top: 90px;
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: start;
+    }
+
+    &__image {
+        height: 530px;
+        width: 530px;
+        background-image: url("../../img/cta-img.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__content {
+        max-width: 562px;
+    }
+
+    &__title {
+        max-width: 724px;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 60px;
+        color: #343439;
+        text-transform: uppercase;
+
+        span {
+            color: #57A41B;
+        }
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 0.04em;
+        color: #343439;
+    }
+}

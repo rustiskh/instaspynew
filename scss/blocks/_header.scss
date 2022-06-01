@@ -1,0 +1,39 @@
+.header {
+    padding: 36px 0 34px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    &__navigation {
+        width: 260px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+
+            .navigation__item {
+
+                a {
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 38px;
+                    text-decoration: none;
+                    color: #343439;
+                }
+            }
+        }
+        
+    }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 330px;
+    }
+    
+}

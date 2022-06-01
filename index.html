@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <img src="/icons/header-logo.svg" alt="Инсташпион" />
+        </div>
+
+        <nav class="header__navigation">
+          <ul>
+            <li class="navigation__item"><a href="#features">Возможности</a></li>
+            <li class="navigation__item">
+              <a href="#recommend">За кем смотреть</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__btns">
+          <button class="button button_text">Попробовать бесплатно</button>
+          <button class="button"><img src="/icons/user.svg" alt="" /></button>
+        </div>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="container container_big">
+        <div class="tile tile_big">
+          <div class="main__content">
+            <h1 class="main__title">
+              <span>Смотри</span> любой инстаграм анонимно и
+              <span>бесплатно</span>
+            </h1>
+
+            <div class="main__list">
+              <div class="item">
+                <img src="icons/love.svg" alt="" class="item__icon" />
+                <p class="item__txt">Лайки и комментарии</p>
+              </div>
+              <div class="item">
+                <img src="icons/eye.svg" alt="" class="item__icon" />
+                <p class="item__txt">Истории анонимно</p>
+              </div>
+              <div class="item">
+                <img src="icons/user-add.svg" alt="" class="item__icon" />
+                <p class="item__txt">Подписки</p>
+              </div>
+              <div class="item">
+                <img src="icons/users.svg" alt="" class="item__icon" />
+                <p class="item__txt">Тайных поклонников</p>
+              </div>
+            </div>
+
+            <div class="form">
+              <div class="form__elements">
+                <input type="text" placeholder="@username" />
+                <button class="button button_big">Попробовать бесплатно</button>
+              </div>
+              <div class="form__descr">
+                <img src="icons/arrow.svg" alt="" class="arrow" />
+                <p class="text">
+                  Вставьте ссылку или введите название<br />аккаунта, за которым
+                  хотите проследить
+                </p>
+              </div>
+            </div>
+
+            <div class="main__image"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="features__title">Возможности <span>ИнстаШпиона</span></h2>
+        <div class="features-grid-wrapper">
+          <div class="tile features-card card-1">
+            <h3 class="card__title">Лайки</h3>
+            <p class="card__description">
+              Покажем кто кого лайкает в инстаграм. Вы узнаете кого лайкает
+              человек, сколько лайков он ставит каждому из своих подписчиков и
+              наоборот кто лайкет его.
+            </p>
+            <div class="card__img"></div>
+          </div>
+          <div class="tile features-card card-2">
+            <h3 class="card__title">Комментарии</h3>
+            <p class="card__description">
+              Покажем кого комментирует ваш подопечный с полным текстом
+              комментариев.
+            </p>
+            <div class="card__img"></div>
+          </div>
+          <div class="tile features-card card-3">
+            <h3 class="card__title">Подписчики</h3>
+            <p class="card__description">
+              Наш сервис сразу показывает на кого подписывается пользователь в
+              инстаграм.
+            </p>
+            <div class="card__img"></div>
+          </div>
+          <div class="tile features-card card-4">
+            <h3 class="card__title">Истории анонимно</h3>
+            <p class="card__description">
+              Вы можете смотреть все истории любого человека в инстаграм,
+              совершенно анонимно. Если историю удалили, то все равно она будет
+              показываться в нашем сервисе, даже после 24 часов.
+            </p>
+            <div class="card__img"></div>
+          </div>
+          <div class="tile features-card card-5">
+            <h3 class="card__title">Тайные поклонники</h3>
+            <p class="card__description">
+              Покажем тех, кто ставит лайки вашему подопечному, но при этом не
+              подписан на него. Это лучший вариант узнать, кто интересует
+              человек тайно.
+            </p>
+            <div class="card__img"></div>
+          </div>
+          <div class="tile features-card card-6">
+            <h3 class="card__title">Анализ своего аккаунта</h3>
+            <p class="card__description">
+              Наблюдайте за своим аккаунтом. Смотрите кому вы ставите больше
+              всего лайков, кто часто лайкает вас.
+            </p>
+            <div class="card__img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="video-reviews">
+      <div class="container">
+        <h2 class="video-reviews__title">Нам доверяют</h2>
+        <div class="video-reviews__cards">
+          <!-- 1-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-bitl.png"
+                alt="BITL"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">БИТЛ</h4>
+                <p class="subs-number">170 тысяч подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Инсташпион - полезная программа для слежки в инстаграм
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- 2-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-ivanetskaya.png"
+                alt="Ivanetskaya"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">Ivanetskaya</h4>
+                <p class="subs-number">110 тысяч подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Классный сервис, который поможет увидеть всю поднаготную из соц
+                сетей
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- 3-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-taxi-hype.png"
+                alt="Taxi Hype"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">Такси Хайп</h4>
+                <p class="subs-number">419 тысяч подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Изменил подход в пранках с повялением инсташпиона
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- 4-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-nikita-m.png"
+                alt="Martines Nikita"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">Никита Мартинес</h4>
+                <p class="subs-number">245 тысяч подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Не впал бы в депрессию, если бы вовремя начал пользоваться
+                инсташпион
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- 5-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-vlogi-stud.png"
+                alt="Vlogi"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">Влоги студентки</h4>
+                <p class="subs-number">86 тысяч подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Помогла подруге проследить за бывшим
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- 6-ая карточка -->
+          <div class="video-card tile">
+            <div class="video-card__header">
+              <img
+                src="img/video-reviews-avas/ava-vika-trap.png"
+                alt="Vika Trap"
+                class="avatar"
+              />
+              <div class="info">
+                <h4 class="name">Vika Trap</h4>
+                <p class="subs-number">1,66 млн. подписчиков</p>
+              </div>
+            </div>
+
+            <div class="video-card__content">
+              <p class="video-card__description">
+                Vika Trap пробивает парней через инсташпион
+              </p>
+              <div class="video">
+                <div class="video__placeholder">
+                  <div class="video-fade"></div>
+                  <div class="play-icon">
+                    <svg
+                      width="35"
+                      height="40"
+                      viewBox="0 0 35 40"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M33 16.5359C35.6667 18.0755 35.6667 21.9245 33 23.4641L6 39.0526C3.33333 40.5922 -1.95249e-06 38.6677 -1.81789e-06 35.5885L-4.55103e-07 4.41154C-3.20507e-07 1.33234 3.33333 -0.592161 6 0.947439L33 16.5359Z"
+                        fill="#74C733"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <iframe
+                  class="video__player"
+                  src="-"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="recommend" id="recommend">
+      <div class="container">
+        <h2 class="recommend__title">
+          За кем <span>рекомендуем</span> следить
+        </h2>
+        <div class="recommend-cards-wrapper">
+          <!-- 1-ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-half.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Вторая половинка</h4>
+              <p class="recommend-card__descr">
+                Хочешь узнать, кому ставит лайки твоя вторая половинка?
+              </p>
+            </div>
+          </div>
+
+          <!-- 2ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-husband.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Муж</h4>
+              <p class="recommend-card__descr">
+                Проверь мужа на измены, найди всех любовниц и кого он лайкает!
+              </p>
+            </div>
+          </div>
+
+          <!-- 3ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-bride.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Жена</h4>
+              <p class="recommend-card__descr">
+                Что делает жена, пока тебя нет дома? Для кого снимаем сториз?
+              </p>
+            </div>
+          </div>
+
+          <!-- 4ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-liked.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Тебе кто-то нравится</h4>
+              <p class="recommend-card__descr">
+                Ты влюблен и хочешь узнать о человеке как можно больше?
+              </p>
+            </div>
+          </div>
+
+          <!-- 5ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-exes.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Бывший или бывшая</h4>
+              <p class="recommend-card__descr">
+                С кем теперь встречается бывшая любовь? Какие истории постит?
+              </p>
+            </div>
+          </div>
+
+          <!-- 6ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-friends.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Подруга</h4>
+              <p class="recommend-card__descr">
+                Тебе и твоей подруге нравится один и тот же парень?
+              </p>
+            </div>
+          </div>
+
+          <!-- 7ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-children.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Ваши дети</h4>
+              <p class="recommend-card__descr">
+                Хочешь получать отчет о действиях своих детей в Инстаграм?
+              </p>
+            </div>
+          </div>
+
+          <!-- 8ая карточка -->
+          <div class="recommend-card">
+            <div class="tile recommend-card__content">
+              <div class="recommend-card__avatar">
+                <img src="icons/rcmnd-others.svg" alt="" />
+              </div>
+              <h4 class="recommend-card__title">Знакомые</h4>
+              <p class="recommend-card__descr">
+                Кто-то просится к вам в друзья? Хотите узнать о нем побольше?
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile recommend-form">
+          <div class="recommend-form__content">
+            <h4 class="title">Полная деанонимизация людей вокруг тебя!</h4>
+            <p class="description">
+              Душа моя озарена неземной радостью, как эти чудесные весенние
+              утра, которыми я наслаждаюсь от всего сердца. Я совсем один и
+              блаженствую в здешнем краю, словно созданном для таких, как я.
+            </p>
+          </div>
+          <div class="form__elements">
+            <input type="text" placeholder="@username" />
+            <button class="button button_big">Попробовать бесплатно</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <section class="offer">
+        <div class="container">
+          <div class="offer__content">
+            <h2 class="offer__title">
+              <span>Все функции</span> сервиса за 1 рубль в течение 3 дней
+            </h2>
+
+            <p class="offer__descr">Реально ВСЕ ФУНКЦИИ всего за 1 рубль!</p>
+
+            <div class="form">
+              <div class="form__elements">
+                <input type="text" placeholder="@username" />
+                <button class="button button_big">Попробовать бесплатно</button>
+              </div>
+              <div class="form__descr">
+                <img src="icons/arrow.svg" alt="" class="arrow" />
+                <p class="text">
+                  Вставьте ссылку или введите название<br />аккаунта, за которым
+                  хотите проследить
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="offer__image"></div>
+        </div>
+      </section>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title">Вопросы-ответы</h2>
+        <div class="faq__content">
+			<div class="content__column">
+				<!-- 1ая карточка -->
+				<button class="tile faq-card">
+					<div class="faq-card__header">
+					<div class="title">Как часто происходит обновление?</div>
+					<div class="icon">
+						<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						<circle cx="12" cy="12" r="11.5" stroke="#74C733" />
+						<rect
+							class="vertical"
+							x="11"
+							y="7"
+							width="2"
+							height="10"
+							rx="1"
+							fill="#343439"
+						/>
+						<rect
+							x="17"
+							y="11"
+							width="2"
+							height="10"
+							rx="1"
+							transform="rotate(90 17 11)"
+							fill="#343439"
+						/>
+						</svg>
+					</div>
+					</div>
+					<div class="faq-card__text">
+					<p>
+						Далеко-далеко за словесными горами в стране гласных и согласных
+						живут рыбные тексты. Вдали от всех живут они в буквенных домах
+						на берегу Семантика большого языкового океана.
+					</p>
+					</div>
+				</button>
+				<!-- 2ая карточка -->
+				<button class="tile faq-card">
+					<div class="faq-card__header">
+					<div class="title">Какую информацию можно узнать через инсташпион?</div>
+					<div class="icon">
+						<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						<circle cx="12" cy="12" r="11.5" stroke="#74C733" />
+						<rect
+							class="vertical"
+							x="11"
+							y="7"
+							width="2"
+							height="10"
+							rx="1"
+							fill="#343439"
+						/>
+						<rect
+							x="17"
+							y="11"
+							width="2"
+							height="10"
+							rx="1"
+							transform="rotate(90 17 11)"
+							fill="#343439"
+						/>
+						</svg>
+					</div>
+					</div>
+					<div class="faq-card__text">
+					<p>
+						Далеко-далеко за словесными горами в стране гласных и согласных
+						живут рыбные тексты. Вдали от всех живут они в буквенных домах
+						на берегу Семантика большого языкового океана.
+					</p>
+					</div>
+				</button>
+
+				<!-- 3ая карточка -->
+				<button class="tile faq-card">
+					<div class="faq-card__header">
+					<div class="title">Как долго хранятся истории?</div>
+					<div class="icon">
+						<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						>
+						<circle cx="12" cy="12" r="11.5" stroke="#74C733" />
+						<rect
+							class="vertical"
+							x="11"
+							y="7"
+							width="2"
+							height="10"
+							rx="1"
+							fill="#343439"
+						/>
+						<rect
+							x="17"
+							y="11"
+							width="2"
+							height="10"
+							rx="1"
+							transform="rotate(90 17 11)"
+							fill="#343439"
+						/>
+						</svg>
+					</div>
+					</div>
+					<div class="faq-card__text">
+					<p>
+						Далеко-далеко за словесными горами в стране гласных и согласных
+						живут рыбные тексты. Вдали от всех живут они в буквенных домах
+						на берегу Семантика большого языкового океана.
+					</p>
+					</div>
+				</button>
+			</div>
+
+			<div class="content__column">
+			<!-- 4ая карточка -->
+			<button class="tile faq-card">
+				<div class="faq-card__header">
+				<div class="title">Показывает ли ваш сервис гостей в инстаграм?</div>
+				<div class="icon">
+					<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					>
+					<circle cx="12" cy="12" r="11.5" stroke="#74C733" />
+					<rect
+						class="vertical"
+						x="11"
+						y="7"
+						width="2"
+						height="10"
+						rx="1"
+						fill="#343439"
+					/>
+					<rect
+						x="17"
+						y="11"
+						width="2"
+						height="10"
+						rx="1"
+						transform="rotate(90 17 11)"
+						fill="#343439"
+					/>
+					</svg>
+				</div>
+				</div>
+				<div class="faq-card__text">
+				<p>
+					Далеко-далеко за словесными горами в стране гласных и согласных
+					живут рыбные тексты. Вдали от всех живут они в буквенных домах
+					на берегу Семантика большого языкового океана.
+				</p>
+				</div>
+			</button>
+			<!-- 5ая карточка -->
+			<button class="tile faq-card">
+				<div class="faq-card__header">
+				<div class="title">Нужно ли выполнять вход в свой аккаунт?</div>
+				<div class="icon">
+					<svg
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+					>
+					<circle cx="12" cy="12" r="11.5" stroke="#74C733" />
+					<rect
+						class="vertical"
+						x="11"
+						y="7"
+						width="2"
+						height="10"
+						rx="1"
+						fill="#343439"
+					/>
+					<rect
+						x="17"
+						y="11"
+						width="2"
+						height="10"
+						rx="1"
+						transform="rotate(90 17 11)"
+						fill="#343439"
+					/>
+					</svg>
+				</div>
+				</div>
+				<div class="faq-card__text">
+				<p>
+					Далеко-далеко за словесными горами в стране гласных и согласных
+					живут рыбные тексты. Вдали от всех живут они в буквенных домах
+					на берегу Семантика большого языкового океана.
+				</p>
+				</div>
+			</button>
+		</div>
+        </div>
+      </div>
+    </section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-block logo">
+				<img src="icons/logo-footer-mini.svg" alt="InstaShpion">
+			</div>
+			<div class="footer-block contacts">
+				<a href="tel:+74994441320">+7 (499) 444-13-20</a>
+				<p>Индивидуальный предприниматель<br>
+					Дудик Анатолий Анатольевич<br>
+					ИНН 391601492516<br>
+					ОГРНИП 318392600040290
+				</p>
+			</div>
+			<div class="footer-block copywrite">
+				<a href="#">Политика конфиденциальности</a>
+				<p>
+					Адресс:<br>Пресненская наб., 12, БЦ Москва, 123317<br><br>
+					© 2022 ИнстаШпиона. Все права защищены.
+				</p>
+			</div>
+		</div>
+	</footer>
+
+    <script src="js/video.js"></script>
+    <script src="js/faq.js"></script>
+  </body>
+</html>

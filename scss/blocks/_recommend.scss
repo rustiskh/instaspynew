@@ -1,0 +1,99 @@
+.recommend {
+    margin-top: 120px;
+
+    &__title {
+        margin-bottom: 42px;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 43px;
+        color: #161516;
+
+        span {
+            color: #74C733;
+        }
+    }
+
+    &-cards-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &-card {
+        max-width: 270px;
+        position: relative;
+        margin-bottom: 52px;
+
+        &__avatar {
+            position: absolute;
+            top: -22px;
+            width: 88px;
+            height: 88px;
+            background: #FFFFFF;
+            border-radius: 24px;
+            box-shadow: 0px 15px 30px rgba(198, 197, 210, 0.15), 0px 12px 20px rgba(198, 197, 210, 0.25), 0px 4px 5px rgba(198, 197, 210, 0.45);
+            padding: 22px;
+        }
+
+        &__content {
+            min-height: 300px;
+            padding: 98px 30px 0 30px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 33px;
+            color: #161516;
+        }
+
+        &__descr {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 29px;
+            color: #595866;
+        }
+    }
+
+    &-form {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 100px;
+
+        &__content {
+            max-width: 600px;
+
+            .title {
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 33px;
+                color: #161516;
+            }
+
+            .description {
+                font-weight: 300;
+                font-size: 15px;
+                line-height: 29px;
+                color: #595866;
+            }
+        }
+
+        .form__elements {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                width: 284px;
+            }
+
+            input {
+                width: 284px;
+                height: 52px;
+                margin: 0;
+            }
+        }
+    }
+}

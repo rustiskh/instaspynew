@@ -1,0 +1,25 @@
+.footer {
+    background-color: #FFFFFF;
+    padding: 75px 0;
+    margin-top: 72px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 27px;
+        color: #74C733;
+        text-decoration: none;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 17px;
+        color: #88879B;
+    }
+}
