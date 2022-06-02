@@ -68,7 +68,7 @@
             top: 280px;
             right: -40px;
             bottom: -20px;
-            background-image: url("/img/opportunities-likes.svg");
+            background-image: url("../img/opportunities-likes.svg");
         }
     }
     .card-2, .card-3 {
@@ -81,12 +81,12 @@
             width: 100%;
             top: 105px;
             right: -100px;
-            background-image: url("/img/opportunities-comments.svg");
+            background-image: url("../img/opportunities-comments.svg");
         }
     }
     .card-3 {
         .card__img {
-            background-image: url("/img/opportunities-followers.svg");
+            background-image: url("../img/opportunities-followers.svg");
         }
     }
 
@@ -100,7 +100,7 @@
             width: 100%;
             top: 32px;
             right: -266px;
-            background-image: url("/img/opportunities-stories.svg");
+            background-image: url("../img/opportunities-stories.svg");
         }
     }
     .card-5, .card-6 {
@@ -113,12 +113,12 @@
             width: 100%;
             top: 80px;
             right: -180px;
-            background-image: url("/img/opportunities-guests.svg");
+            background-image: url("../img/opportunities-guests.svg");
         }
     }
     .card-6 {
         .card__img {
-            background-image: url("/img/opportunities-self.svg");
+            background-image: url("../img/opportunities-self.svg");
         }
     }
 }
