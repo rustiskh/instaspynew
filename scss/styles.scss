@@ -7,6 +7,7 @@
 
 body {
 	background: #EEEEF4;
+	overflow-x: hidden;
 }
 
 .container {
@@ -25,6 +26,28 @@ body {
 
 	&_big {
 		border-radius: 66px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 1170px;
+		margin: 0 40px;
+	
+		&_big {
+			max-width: 1350px;
+			margin: 0 auto;
+		}
+	}
+
+	.tile {
+		border-radius: 24px;
+	}
+}
+
+@media (max-width: 740px) {
+	.tile_big {
+		border-radius: 0px;
 	}
 }
 
