@@ -17,6 +17,10 @@
         background-position: center;
     }
 
+    &__image-mobile {
+        display: none;
+    }
+
     &__content {
         max-width: 562px;
     }
@@ -43,6 +47,47 @@
     }
 }
 
-.test-task {
-    color: red;
+@media (max-width: 1290px) {
+    .offer {
+    
+        &__image {
+            display: none;
+        }
+    
+        &__image-mobile {
+            display: block;
+            height: 310px;
+            max-width: 310px;
+            width: 100%;
+            background-image: url("../img/cta-img.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-top: 10px;
+            margin-bottom: 14px;
+        }
+    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items:center;
+            margin: 0 auto;
+        }
+    
+        &__title {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 43px;
+            text-align: center;
+        }
+    
+        &__descr {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #161516;
+            margin-bottom: 24px;
+        }
+    }
 }

@@ -1,125 +1,268 @@
 .features {
+  margin-top: 120px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 43px;
+    color: #161516;
+
+    span {
+      color: #74c733;
+    }
+  }
+
+  &-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      "card-1 card-1 card-2 card-2 card-3 card-3"
+      "card-1 card-1 card-4 card-4 card-4 card-4"
+      "card-5 card-5 card-5 card-6 card-6 card-6";
+    margin-top: 20px;
+  }
+  .card-1 {
+    grid-area: card-1;
+  }
+  .card-2 {
+    grid-area: card-2;
+  }
+  .card-3 {
+    grid-area: card-3;
+  }
+  .card-4 {
+    grid-area: card-4;
+  }
+  .card-5 {
+    grid-area: card-5;
+  }
+  .card-6 {
+    grid-area: card-6;
+  }
+
+  &-card {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card__title {
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 33px;
+      color: #161516;
+    }
+
+    .card__description {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 29px;
+      color: #595866;
+    }
+
+    .card__img {
+      position: absolute;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .card__number {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 29px;
+      letter-spacing: 0.5em;
+      color: #74c733;
+      display: none;
+    }
+  }
+
+  .card-1 {
+    position: relative;
+    .card__title,
+    .card__description {
+      max-width: 270px;
+    }
+    .card__img {
+      height: 270px;
+      width: 100%;
+      top: 280px;
+      right: -40px;
+      bottom: -20px;
+      background-image: url("../img/opportunities-likes.svg");
+    }
+  }
+  .card-2,
+  .card-3 {
+    position: relative;
+    .card__title,
+    .card__description {
+      max-width: 180px;
+    }
+    .card__img {
+      height: 161px;
+      width: 100%;
+      top: 105px;
+      right: -100px;
+      background-image: url("../img/opportunities-comments.svg");
+    }
+  }
+  .card-3 {
+    .card__img {
+      background-image: url("../img/opportunities-followers.svg");
+    }
+  }
+
+  .card-4 {
+    position: relative;
+    .card__title,
+    .card__description {
+      max-width: 480px;
+    }
+    .card__img {
+      height: 232px;
+      width: 100%;
+      top: 32px;
+      right: -266px;
+      background-image: url("../img/opportunities-stories.svg");
+    }
+  }
+  .card-5,
+  .card-6 {
+    position: relative;
+    .card__title,
+    .card__description {
+      max-width: 316px;
+    }
+    .card__img {
+      height: 190px;
+      width: 100%;
+      top: 80px;
+      right: -180px;
+      background-image: url("../img/opportunities-guests.svg");
+    }
+  }
+  .card-6 {
+    .card__img {
+      background-image: url("../img/opportunities-self.svg");
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .features {
     margin-top: 120px;
 
     &__title {
-        font-weight: 700;
-        font-size: 31px;
-        line-height: 43px;
-        color: #161516;
-
-        span {
-            color: #74C733;
-        }
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 35px;
     }
-    
 
     &-grid-wrapper {
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-        grid-template-rows: 1fr 1fr 1fr; 
-        gap: 30px 30px; 
-        grid-template-areas: 
-          "card-1 card-1 card-2 card-2 card-3 card-3"
-          "card-1 card-1 card-4 card-4 card-4 card-4"
-          "card-5 card-5 card-5 card-6 card-6 card-6";
-          margin-top: 20px;
-          
-      }
-        .card-1 {grid-area: card-1;}
-        .card-2 {grid-area: card-2;}
-        .card-3 {grid-area: card-3;}
-        .card-4 {grid-area: card-4;}
-        .card-5 {grid-area: card-5;}
-        .card-6 {grid-area: card-6;}
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+// overflow: auto;
 
-    &-card {
-        padding: 50px;
+      &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 438px;
+      }
+
+      .card-1,
+      .card-2,
+      .card-3,
+      .card-4,
+      .card-5,
+      .card-6 {
+        padding: 30px 30px 20px 30px;
+        width: 300px;
+        height: 438px;
 
         .card__title {
-            font-weight: 700;
-            font-size: 21px;
-            line-height: 33px;
-            color: #161516;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          margin-top: 30px;
         }
-        
         .card__description {
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 29px;
-            color: #595866;
-        }
-
-        .card__img {
-            position: absolute;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    }
-
-    .card-1 {
-        position: relative;
-        .card__title, .card__description {
-            max-width: 270px;
+          font-weight: 400;
+          margin-top: 10px;
         }
         .card__img {
-            height: 270px;
-            width: 100%;
-            top: 280px;
-            right: -40px;
-            bottom: -20px;
-            background-image: url("../img/opportunities-likes.svg");
+          position: static;
+          width: 120px;
+          height: 120px;
         }
+      }
     }
-    .card-2, .card-3 {
-        position: relative;
-        .card__title, .card__description {
-            max-width: 180px;
-        }
-        .card__img {
-            height: 161px;
-            width: 100%;
-            top: 105px;
-            right: -100px;
-            background-image: url("../img/opportunities-comments.svg");
-        }
-    }
-    .card-3 {
-        .card__img {
-            background-image: url("../img/opportunities-followers.svg");
-        }
-    }
-
-    .card-4 {
-        position: relative;
-        .card__title, .card__description {
-            max-width: 480px;
-        }
-        .card__img {
-            height: 232px;
-            width: 100%;
-            top: 32px;
-            right: -266px;
-            background-image: url("../img/opportunities-stories.svg");
-        }
-    }
-    .card-5, .card-6 {
-        position: relative;
-        .card__title, .card__description {
-            max-width: 316px;
-        }
-        .card__img {
-            height: 190px;
-            width: 100%;
-            top: 80px;
-            right: -180px;
-            background-image: url("../img/opportunities-guests.svg");
-        }
-    }
-    .card-6 {
-        .card__img {
-            background-image: url("../img/opportunities-self.svg");
-        }
-    }
+  }
 }
 
+@media (max-width: 740px) {
+  .features {
+    margin-top: 120px;
+
+    &__title {
+      margin-left: 40px;
+    }
+
+    &-grid-wrapper {
+      display: block;
+      // flex-wrap: wrap;
+      // justify-content: center;
+
+      &-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 300px;
+        height: 525px;
+      }
+
+      .card-1,
+      .card-2,
+      .card-3,
+      .card-4,
+      .card-5,
+      .card-6 {
+        display: flex;
+        padding: 30px 30px 20px 30px;
+        width: 300px;
+        height: 525px;
+        margin-left: 10px;
+
+        .card__title {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+          margin-top: 30px;
+        }
+        .card__description {
+          max-width: 100%;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+        .card__img {
+          position: static;
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      .card__number {
+        display: block;
+      }
+    }
+  }
+  .features .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}

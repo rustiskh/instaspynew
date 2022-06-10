@@ -4,20 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Инсташпион - анализ активности профилей Instagram</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+	<link rel="stylesheet" href="/css/slick.css">
     <link rel="stylesheet" href="css/styles.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__logo">
-          <img src="icons/header-logo.svg" alt="Инсташпион" />
+          <img class="normal" src="icons/header-logo.svg" alt="Инсташпион" />
+          <img class="mini" src="icons/logo-footer-mini.svg" alt="Инсташпион" />
         </div>
 
         <nav class="header__navigation">
@@ -30,8 +32,9 @@
         </nav>
 
         <div class="header__btns">
-          <button class="button button_text">Попробовать бесплатно</button>
-          <button class="button"><img src="icons/user.svg" alt="" /></button>
+          <a href="https://instashpion.ru/auth/signup?redirect=/instashpion/dashboard"><button class="button button_text">Попробовать бесплатно</button></a>
+          
+          <a href="https://instashpion.ru/auth/instashpion-login"><button class="button"><img src="icons/user.svg" alt="" /></button></a>
         </div>
       </div>
     </header>
@@ -89,55 +92,73 @@
         <h2 class="features__title">Возможности <span>ИнстаШпиона</span></h2>
         <div class="features-grid-wrapper">
           <div class="tile features-card card-1">
-            <h3 class="card__title">Лайки</h3>
-            <p class="card__description">
-              Покажем кто кого лайкает в инстаграм. Вы узнаете кого лайкает
-              человек, сколько лайков он ставит каждому из своих подписчиков и
-              наоборот кто лайкет его.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+				<h3 class="card__title">Лайки</h3>
+				<p class="card__description">
+				Покажем кто кого лайкает в инстаграм. Вы узнаете кого лайкает
+				человек, сколько лайков он ставит каждому из своих подписчиков и
+				наоборот кто лайкет его.
+				</p>
+			</div>
+			<div class="card__number">1/6</div>
           </div>
           <div class="tile features-card card-2">
-            <h3 class="card__title">Комментарии</h3>
-            <p class="card__description">
-              Покажем кого комментирует ваш подопечный с полным текстом
-              комментариев.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+				<h3 class="card__title">Комментарии</h3>
+				<p class="card__description">
+					Покажем кого комментирует ваш подопечный с полным текстом
+					комментариев.
+				</p>
+			</div>
+			<div class="card__number">2/6</div>
           </div>
           <div class="tile features-card card-3">
-            <h3 class="card__title">Подписчики</h3>
-            <p class="card__description">
-              Наш сервис сразу показывает на кого подписывается пользователь в
-              инстаграм.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+				<h3 class="card__title">Подписчики</h3>
+				<p class="card__description">
+				Наш сервис сразу показывает на кого подписывается пользователь в
+				инстаграм.
+				</p>
+			</div>
+			<div class="card__number">3/6</div>
           </div>
           <div class="tile features-card card-4">
-            <h3 class="card__title">Истории анонимно</h3>
-            <p class="card__description">
-              Вы можете смотреть все истории любого человека в инстаграм,
-              совершенно анонимно. Если историю удалили, то все равно она будет
-              показываться в нашем сервисе, даже после 24 часов.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+            	<h3 class="card__title">Истории анонимно</h3>
+				<p class="card__description">
+				Вы можете смотреть все истории любого человека в инстаграм,
+				совершенно анонимно. Если историю удалили, то все равно она будет
+				показываться в нашем сервисе, даже после 24 часов.
+				</p>
+			</div>
+			<div class="card__number">4/6</div>
           </div>
           <div class="tile features-card card-5">
-            <h3 class="card__title">Тайные поклонники</h3>
-            <p class="card__description">
-              Покажем тех, кто ставит лайки вашему подопечному, но при этом не
-              подписан на него. Это лучший вариант узнать, кто интересует
-              человек тайно.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+				<h3 class="card__title">Тайные поклонники</h3>
+				<p class="card__description">
+				Покажем тех, кто ставит лайки вашему подопечному, но при этом не
+				подписан на него. Это лучший вариант узнать, кто интересует
+				человека тайно.
+				</p>
+			</div>
+			<div class="card__number">5/6</div>
           </div>
           <div class="tile features-card card-6">
-            <h3 class="card__title">Анализ своего аккаунта</h3>
-            <p class="card__description">
-              Наблюдайте за своим аккаунтом. Смотрите кому вы ставите больше
-              всего лайков, кто часто лайкает вас.
-            </p>
-            <div class="card__img"></div>
+			<div class="card__content">
+				<div class="card__img"></div>
+				<h3 class="card__title">Анализ своего аккаунта</h3>
+				<p class="card__description">
+				Наблюдайте за своим аккаунтом. Смотрите кому вы ставите больше
+				всего лайков, кто часто лайкает вас.
+				</p>
+			</div>
+			<div class="card__number">6/6</div>
           </div>
         </div>
       </div>
@@ -439,6 +460,7 @@
               <p class="recommend-card__descr">
                 Хочешь узнать, кому ставит лайки твоя вторая половинка?
               </p>
+              <div class="recommend-card__number">1/8</div>
             </div>
           </div>
 
@@ -452,6 +474,7 @@
               <p class="recommend-card__descr">
                 Проверь мужа на измены, найди всех любовниц и кого он лайкает!
               </p>
+              <div class="recommend-card__number">2/8</div>
             </div>
           </div>
 
@@ -465,6 +488,7 @@
               <p class="recommend-card__descr">
                 Что делает жена, пока тебя нет дома? Для кого снимаем сториз?
               </p>
+              <div class="recommend-card__number">3/8</div>
             </div>
           </div>
 
@@ -478,6 +502,7 @@
               <p class="recommend-card__descr">
                 Ты влюблен и хочешь узнать о человеке как можно больше?
               </p>
+              <div class="recommend-card__number">4/8</div>
             </div>
           </div>
 
@@ -491,6 +516,7 @@
               <p class="recommend-card__descr">
                 С кем теперь встречается бывшая любовь? Какие истории постит?
               </p>
+              <div class="recommend-card__number">5/8</div>
             </div>
           </div>
 
@@ -504,6 +530,7 @@
               <p class="recommend-card__descr">
                 Тебе и твоей подруге нравится один и тот же парень?
               </p>
+              <div class="recommend-card__number">6/8</div>
             </div>
           </div>
 
@@ -517,6 +544,7 @@
               <p class="recommend-card__descr">
                 Хочешь получать отчет о действиях своих детей в Инстаграм?
               </p>
+              <div class="recommend-card__number">7/8</div>
             </div>
           </div>
 
@@ -530,6 +558,7 @@
               <p class="recommend-card__descr">
                 Кто-то просится к вам в друзья? Хотите узнать о нем побольше?
               </p>
+              <div class="recommend-card__number">8/8</div>
             </div>
           </div>
         </div>
@@ -558,7 +587,7 @@
             <h2 class="offer__title">
               <span>Все функции</span> сервиса за 1 рубль в течение 3 дней
             </h2>
-
+            <div class="offer__image-mobile"></div>
             <p class="offer__descr">Реально ВСЕ ФУНКЦИИ всего за 1 рубль!</p>
 
             <div class="form">
@@ -805,29 +834,49 @@
     </section>
 
 	<footer class="footer">
-		<div class="container">
-			<div class="footer-block logo">
-				<img src="icons/logo-footer-mini.svg" alt="InstaShpion">
-			</div>
-			<div class="footer-block contacts">
-				<a href="tel:+74994441320">+7 (499) 444-13-20</a>
-				<p>Индивидуальный предприниматель<br>
-					Дудик Анатолий Анатольевич<br>
-					ИНН 391601492516<br>
-					ОГРНИП 318392600040290
-				</p>
-			</div>
-			<div class="footer-block copywrite">
-				<a href="#">Политика конфиденциальности</a>
-				<p>
-					Адресс:<br>Пресненская наб., 12, БЦ Москва, 123317<br><br>
-					© 2022 ИнстаШпиона. Все права защищены.
-				</p>
-			</div>
-		</div>
+        <div class="footer-pc">
+        <div class="footer-pc__logo">
+          <img src="icons/logo-footer-mini.svg" alt="InstaShpion">
+        </div>
+        <div class="footer-pc__contacts">
+          <a href="tel:+74994441320">+7 (499) 444-13-20</a>
+          <p>Индивидуальный предприниматель<br>
+            Дудик Анатолий Анатольевич<br>
+            ИНН 391601492516<br>
+            ОГРНИП 318392600040290
+          </p>
+        </div>
+        <div class="footer-pc__copywrite">
+          <a href="#">Политика конфиденциальности</a>
+          <p>Адрес:<br>Пресненская наб., 12, БЦ Москва, 123317<br><br>© 2022 ИнстаШпиона. Все права защищены.
+          </p>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div class="footer-mobile__contacts">
+          <img src="icons/header-logo.svg" alt="InstaShpion">
+          <a href="tel:+74994441320">+7 (499) 444-13-20</a>
+          <a href="#">Политика конфиденциальности</a>
+          <p>
+            Адрес:<br>Пресненская наб., 12, БЦ Москва, 123317
+          </p>
+        </div>
+        <div class="footer-mobile__copywrite">
+          <p class="copywrite">© 2022 ИнстаШпиона. Все права защищены.</p>
+          <p>Индивидуальный предприниматель<br>
+            Дудик Анатолий Анатольевич<br>
+            ИНН 391601492516<br>
+            ОГРНИП 318392600040290
+          </p>
+        </div>
+      </div>
 	</footer>
 
     <script src="js/video.js"></script>
     <script src="js/faq.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="/js/slick.min.js"></script>
+	<script src="/js/script.js"></script>
   </body>
 </html>
