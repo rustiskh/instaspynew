@@ -204,9 +204,12 @@
 
 @media (max-width: 740px) {
 
+	.video-reviews__cards {
+		display: block;
+	}
 	.video-reviews__cards .video-card {
 		margin: 0 15px;
-		width: calc(100vw - 60px);
+		// width: calc(100vw - 60px);
 	}
 
 	.video-reviews__cards .video-card__content {
