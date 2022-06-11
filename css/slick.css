@@ -134,7 +134,7 @@
 }
 
 .video-reviews__cards .slick-list {
-    width: 330px;
+    width: 100%;
     padding: 0 10px;
 }
 
@@ -159,7 +159,9 @@
 .video-reviews__cards .slick-dots {
     display: flex;
     position: absolute;
-    top: 110%;
+    top: 112%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size:0;
 }
 
