@@ -35,9 +35,9 @@ $(document).ready(function () {
         settings: {
           centerPadding: "30px",
           prevArrow:
-            '<button type="button" class="slick-prev"><img src="../icons/arrow-left.svg"></button>',
+            '<button type="button" class="slick-prev"><img src="icons/arrow-left.svg"></button>',
           nextArrow:
-            '<button type="button" class="slick-next"><img src="../icons/arrow-right.svg"></button>',
+            '<button type="button" class="slick-next"><img src="icons/arrow-right.svg"></button>',
         },
       },
     ],
